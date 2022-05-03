@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Lobster&family=Lora:wght@400;500&family=M+PLUS+Rounded+1c&family=Praise&family=Redressed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.full-page{
+    height: 100%;
+    width: 100%;
+}
+
+/* Navigation bar  */
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background:rgba(0, 0, 0,0.5) url(Image/night.jpeg);
+    z-index: -1;
+    background-blend-mode: darken;
+}
+
+.navbar{
+    display: flex;
+    margin-top: 2rem;
+}
+
+#logo{
+    display: flex;
+    width: 30%;
+}
+
+#logo img{
+    margin: 10px;
+    margin-left: 2rem;
+    height: 50px;
+    width: 53px;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+#logo h1{
+    padding: 23px 5px;
+    color: white;
+    font-size: 27px;
+    font-family: 'Lobster', cursive;
+    cursor: pointer;
+}
+
+.navbar nav{
+    width: 70%;
+    margin-left: 31rem;
+    margin-top: 10px;
+
+}
+
+#MenuItems {
+    margin: 1rem;
+    display: flex;
+    font-size: 22px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+#MenuItems li{
+    list-style: none;
+    margin: 0 25px;
+}
+
+#MenuItems li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+#MenuItems li a{
+    text-decoration: none;
+    color: white;
+}
+.loginbtn{
+    font-size: 18px;
+    background: transparent;
+    /* border: none; */
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    color: white;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.loginbtn:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+/* Login form  */
+
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 2% auto;
+    background:rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    overflow: hidden;
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background:transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: white;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position:absolute;
+    width: 110px;
+    height: 100%;
+    background:#7d8acc;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.input-group-login{
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-group-register{
+    top: 120px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top:0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background:#F3C693;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.check-box{
+    margin: 30px 10px 34px 0;
+}
+
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+
+#login{
+    left: 50px;
+}
+
+#login input{
+    color: white;
+    font-size: 15px;
+}
+
+#register{
+    /* display: none; */
+    left: 450px;
+}
+
+#register input{
+    color: white;
+    font-size: 15px;
+}
